@@ -16,12 +16,10 @@ class terror_hotel(hotel):
     pos = "Târgu Mureș"
     def __init__(self):
         pass
-        
+
     def info(self):
         super().hotel_info[0] = "Posision: "
         super().hotel_info[1] = self.pos
-        super().hotel_info[2] = " Date of arrival: "
-        super().hotel_info[3] = self.date_of_arival
         super().hotel_info[4] = " price: "
         super().hotel_info[5] = self.price
 
@@ -32,13 +30,14 @@ class spooky_hotel(hotel):
     pos = "Budapest"
     def __init__(self):
         pass
-        
+
     def info(self):
-        super().hotel_info[0] = "Posision: "
-        super().hotel_info[1] = self.pos
-        super().hotel_info[2] = " price: "
-        super().hotel_info[3] = self.price
-        
+        super().hotel_info[0] = "Terror Hotel"
+        super().hotel_info[1] = " Posision: "
+        super().hotel_info[2] = self.pos
+        super().hotel_info[3] = " price: "
+        super().hotel_info[4] = self.price
+
         return super().hotel_info
 
 class spooky_hotel(hotel):
@@ -46,13 +45,14 @@ class spooky_hotel(hotel):
     pos = "Budapest"
     def __init__(self):
         pass
-        
+
     def info(self):
-        super().hotel_info[0] = "Posision: "
-        super().hotel_info[1] = self.pos
-        super().hotel_info[2] = " price: "
-        super().hotel_info[5] = self.price
-        
+        super().hotel_info[0] = "Spooky Hotel"
+        super().hotel_info[1] = " Posision: "
+        super().hotel_info[2] = self.pos
+        super().hotel_info[3] = " price: "
+        super().hotel_info[4] = self.price
+
         return super().hotel_info
 
 class doomed_hotel(hotel):
@@ -60,13 +60,14 @@ class doomed_hotel(hotel):
     pos = "Cluj-Napoca"
     def __init__(self):
         pass
-        
+
     def info(self):
-        super().hotel_info[0] = "Posision: "
-        super().hotel_info[1] = self.pos
-        super().hotel_info[2] = " price: "
-        super().hotel_info[5] = self.price
-        
+        super().hotel_info[0] = "Doomed Hotel"
+        super().hotel_info[1] = " Posision: "
+        super().hotel_info[2] = self.pos
+        super().hotel_info[3] = " price: "
+        super().hotel_info[4] = self.price
+
         return super().hotel_info
 
 class show_hotels:
