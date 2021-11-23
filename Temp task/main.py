@@ -7,9 +7,10 @@ from hotel import show_hotels
 def main():
     hotels = show_hotels()
     while True:
-        Print("==============")
+        print("")
+        print("==============")
         print("==== Menu ====")
-        Print("==============")
+        print("==============")
         print("")
         print("chose one of: ")
         print(" q/Q: to quit")
@@ -19,7 +20,7 @@ def main():
         print("")
         print("")
         choice = input("--> ")
-        choice.lower()
+        choice = choice.lower()
 
         if choice == "q":
             print("Thank you")
@@ -28,14 +29,16 @@ def main():
         elif "hotel" in choice:
             hotels.show()
         else:
-            Print("==============")
+            print("")
+            print("==============")
             print("==== Menu ====")
-            Print("==============")
+            print("==============")
             print("")
             print("chose one of: ")
-            print(" q/Q: to quit")
+            print(" q: to quit")
             print("")
-            print("Hotel: to see avaleble hotels")
+            print("hotel: to see avaleble hotels")
             print("")
             print("")
             print("")
+main()
