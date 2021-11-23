@@ -6,7 +6,7 @@ The file containing classes for hotels
 class hotel:
     pos = ""
     date_of_arival = ""
-    hotel_info = []
+    hotel_info = ["", "", "", "", ""]
     def __init__(self):
         pass
 
@@ -14,20 +14,6 @@ class hotel:
 class terror_hotel(hotel):
     price = "from 250/night"
     pos = "Târgu Mureș"
-    def __init__(self):
-        pass
-
-    def info(self):
-        super().hotel_info[0] = "Posision: "
-        super().hotel_info[1] = self.pos
-        super().hotel_info[4] = " price: "
-        super().hotel_info[5] = self.price
-
-        return super().hotel_info
-
-class spooky_hotel(hotel):
-    price = "from 350/night"
-    pos = "Budapest"
     def __init__(self):
         pass
 
@@ -71,10 +57,11 @@ class doomed_hotel(hotel):
         return super().hotel_info
 
 class show_hotels:
+    spooky = spooky_hotel()
+    terror = terror_hotel()
+    doomed = doomed_hotel()
     def __init__(self):
-        self.spooky = spooky_hotel()
-        self.terror = terror_hotel()
-        self.doomed = doomed_hotel()
+        pass
     def show(self):
         print(self.spooky.info())
         print(self.terror.info())

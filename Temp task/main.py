@@ -3,11 +3,11 @@ The main file
 @SakuyaYae
 """
 from hotel import show_hotels
-from bus import buses
+from bus import bus_info
 
 def main():
     hotels = show_hotels()
-    bus = buses()
+    bus = bus_info()
     while True:
         print("")
         print("==============")
