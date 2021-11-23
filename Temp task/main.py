@@ -3,9 +3,11 @@ The main file
 @SakuyaYae
 """
 from hotel import show_hotels
+from bus import buses
 
 def main():
     hotels = show_hotels()
+    bus = buses()
     while True:
         print("")
         print("==============")
@@ -17,7 +19,9 @@ def main():
         print("")
         print("Hotel: to see avaleble hotels")
         print("")
-        print("")
+        print("Bus Price: to see price info on buses")
+        print("Bus: to see all info on buses")
+        print("Bus Time: to see when buses are avaleble ")
         print("")
         choice = input("--> ")
         choice = choice.lower()
@@ -28,6 +32,14 @@ def main():
 
         elif "hotel" in choice:
             hotels.show()
+
+        elif "bus price" in choice:
+            bus.price_info()
+        elif "bus time" in choice:
+            bus.time_info()
+        elif "bus" in choice:
+            bus.price_info()
+            bus.time_info()
         else:
             print("")
             print("==============")
@@ -37,8 +49,8 @@ def main():
             print("chose one of: ")
             print(" q: to quit")
             print("")
-            print("hotel: to see avaleble hotels")
+            print("Hotel: to see avaleble hotels")
             print("")
-            print("")
+            print("Bus: to see info on buses")
             print("")
 main()

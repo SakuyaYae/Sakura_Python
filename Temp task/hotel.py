@@ -76,6 +76,6 @@ class show_hotels:
         self.terror = terror_hotel()
         self.doomed = doomed_hotel()
     def show(self):
-        print(self.spooky.info)
-        print(self.terror.info)
-        print(self.doomed.info)
+        print(self.spooky.info())
+        print(self.terror.info())
+        print(self.doomed.info())
